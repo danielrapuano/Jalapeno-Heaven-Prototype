@@ -69,65 +69,96 @@
 
   </head>
   <body class="body">
+  
+  <main>
     
     <section class = "p-5 text-center" style = "background-color: #F7C924; ">
       <div class="container-fluid" style="margin-bottom: -2rem;">  
           <div>
             <h1 style="color: #296407;"><b>BIENVENIDOS!</b></h1>
             <h2 style="color: #A51629;"><b>The Flores Family Welcomes You</b></h2>
-
-            <a href="dmenu.html">
-              <button class = "check-out-menu btn btn-lg mb-5" style="background-color: #A51629; color: #F7C924;"><b>Check Out Our Dine-In Menu!</b></button>
-            </a>
+              <a href="dmenu.html">
+                <button class = "check-out-menu btn btn-lg mb-5" style="background-color: #A51629; color: #f8e7a8;"><b>Dine-In Menu</b></button>
+              </a>
+              <a href="tmenu.html">
+                <button class = "check-out-menu btn btn-lg mb-5" style="background-color: #A51629; color: #f8e7a8;"><b>Takeout Menu</b></button>
+              </a>
+ 
             
 
           </div>
-          <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <div class = "row">
+            <div class = "col-6 d-flex justify-content-center">
+              <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class = "car-img" src = "images/homepage/home1.jpg" alt ="homefood"/>
+                  </div>
+                  <div class="carousel-item">
+                    <img class = "car-img" src = "images/homepage/home2.jpg" alt ="homefood"/>
+                  </div>
+                  <div class="carousel-item">
+                    <img class = "car-img" src = "images/homepage/home3.jpg" alt ="homefood"/>
+                  </div>
+                  <div class="carousel-item">
+                    <img class = "car-img" src = "images/homepage/home4.jpg" alt ="homefood"/>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
             </div>
-            <div class="carousel-inner border" style="max-width: 550px; border-radius: 10px; border-color: #296407 !important; border-width: 7px !important;">
-              <div class="carousel-item active">
-                <img class = "car-img" src = "images/homepage/home1.jpg" alt ="homefood"/>
+            <div class = "col-6">
+              <div class = "card" id ="reviews-card" 
+              style = "background-color: #f8e7a8;
+                      border: 5px solid #296407; 
+                      border-radius: 10px;
+                      height: 600px;   
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: center;  
+                      align-items: center;      
+                      text-align: center;">
+
+                <h2 class="review-head" style="color:#A51629; font-size: 2rem;"><b>See what people have to say about us!</b></h2>
+                <br>
+                <h3><a class="review-txt" target="_blank" href="https://www.yelp.com/biz/jalapeno-heaven-branford">Yelp Reviews</a></h3>
+                <h3><a class="review-txt" target="_blank" href="https://www.tripadvisor.com/Restaurant_Review-g33725-d414688-Reviews-Jalapeno_Heaven-Branford_Connecticut.html">Tripadvisor Reviews</a></h3>
+                <h3><a class="review-txt" target="_blank" href="https://www.google.com/search?q=jalapeno-heaven+reviews&rlz=1C1ONGR_enUS929US929&oq=jal&aqs=chrome.1.69i60j69i59j46i39i175i199j69i57j46i67i650j69i60l3.1777j0j7&sourceid=chrome&ie=UTF-8#lrd=0x89e7d6688f381e87:0x9f193f53ffdc37df,1,,,,">Google Reviews</a></h3>
+                <h3><a class="review-txt" target="_blank" href="https://www.opentable.com/r/jalapeno-heaven-branford">Restaurant Guru Reviews</a></h3>
+                <h3><a class="review-txt" target="_blank" href="https://homeplaceblogger.blogspot.com/2013/04/branford-restaurant-week-2013-jalapeno.html">Review from The Home Place Blog</a></h3>
+                <br>
+                <br>
+
+                <h2 class="socials-head" style="color:#A51629; font-size: 2rem;"><b>Like us? Leave us a follow!</b></h2>
+                <br>
+                <span>
+                  <a target="_blank" href="https://www.facebook.com/people/Jalapeno-Heaven/100063672785798/?fref=ts" class="fa fa-facebook"></a>
+                  <a target="_blank" href="https://www.instagram.com/jalapenoheaven/" class="fa fa-instagram"></a>
+                </span>
+
               </div>
-              <div class="carousel-item">
-                <img class = "car-img" src = "images/homepage/home2.jpg" alt ="homefood"/>
-              </div>
-              <div class="carousel-item">
-                <img class = "car-img" src = "images/homepage/home3.jpg" alt ="homefood"/>
-              </div>
-              <div class="carousel-item">
-                <img class = "car-img" src = "images/homepage/home4.jpg" alt ="homefood"/>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
-                
           
         </div>
     </section>
-
-    <div class = "reviews">
-      <h2 class="review-head" style="color:#A51629; font-size: 1.75rem;"><b>Check out reviews about us here!</b></h2>
-      <h3><a class="review-txt" target="_blank" href="https://www.yelp.com/biz/jalapeno-heaven-branford">Yelp Reviews</a></h3>
-      <h3><a class="review-txt" target="_blank" href="https://www.tripadvisor.com/Restaurant_Review-g33725-d414688-Reviews-Jalapeno_Heaven-Branford_Connecticut.html">Tripadvisor Reviews</a></h3>
-      <h3><a class="review-txt" target="_blank" href="https://www.google.com/search?q=jalapeno-heaven+reviews&rlz=1C1ONGR_enUS929US929&oq=jal&aqs=chrome.1.69i60j69i59j46i39i175i199j69i57j46i67i650j69i60l3.1777j0j7&sourceid=chrome&ie=UTF-8#lrd=0x89e7d6688f381e87:0x9f193f53ffdc37df,1,,,,">Google Reviews</a></h3>
-      <h3><a class="review-txt" target="_blank" href="https://www.opentable.com/r/jalapeno-heaven-branford">Restaurant Guru Reviews</a></h3>
-      <h3><a class="review-txt" target="_blank" href="https://homeplaceblogger.blogspot.com/2013/04/branford-restaurant-week-2013-jalapeno.html">Review from The Home Place Blog</a></h3>
-    </div>
      
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+
+  </main>
   </body>
 
 

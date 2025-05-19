@@ -1,18 +1,44 @@
-/* Home page */
-.carousel {
-  width: fit-content;
-  object-fit: contain;
-  margin: auto;
-}
-  
-.carousel-inner img {
-  height: 360px;
-  object-fit: contain;
+/* body spacing */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
+body > main {
+  flex: 1;
+}
+
+
+
+
+.carousel {
+  position: relative;
+}
+  
+.carousel-inner {
+  max-width: 900px; /* increase width if needed */
+  height: 700px; /* or whatever height you prefer */
+
+  overflow: hidden; /* ensures images don't overflow */
+}
 .car-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 3px;
 }
+.carouselExampleIndicators {
+  position: absolute;
+  bottom: 10px; /* Adjust this to your liking */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+
 
 .body {
   background-color: #F7C924;
@@ -46,17 +72,21 @@
   background-color:  #A51629 !important;
 }
 
-.reviews {
+.reviews-card {
   padding: 2rem;
-  width: fit-content;
+  max-width: 900px;
+  height: 600px;
   text-decoration: none; 
   color: #A51629; 
   font-size: 1.5em; 
   border: 5px solid #296407; 
   border-radius: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* vertically center */
+  align-items: center;      /* horizontally center */
+  text-align: center;
+  padding: 1rem;
 }
 
 .reviews h2 {
@@ -90,7 +120,7 @@
 }
 
 .main {
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid #296407;
 }
 
 /* About page */
